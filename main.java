@@ -1,6 +1,4 @@
 
-import java.sql.*;
-
 public class main extends javax.swing.JFrame {
 
     /**
@@ -12,7 +10,7 @@ public class main extends javax.swing.JFrame {
 
    
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
@@ -20,17 +18,17 @@ public class main extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jCheckBox4 = new javax.swing.JCheckBox();
-        jCheckBox5 = new javax.swing.JCheckBox();
-        jCheckBox6 = new javax.swing.JCheckBox();
-        jCheckBox7 = new javax.swing.JCheckBox();
-        jCheckBox8 = new javax.swing.JCheckBox();
-        jCheckBox9 = new javax.swing.JCheckBox();
+        jHead = new javax.swing.JCheckBox();
+        jCough = new javax.swing.JCheckBox();
+        jFatigue = new javax.swing.JCheckBox();
+        jBody = new javax.swing.JCheckBox();
+        jSore = new javax.swing.JCheckBox();
+        jVommit = new javax.swing.JCheckBox();
+        jDia = new javax.swing.JCheckBox();
+        jRunny = new javax.swing.JCheckBox();
+        jSort = new javax.swing.JCheckBox();
         jButton1 = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        Droprange = new javax.swing.JComboBox<>();
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
@@ -55,23 +53,23 @@ public class main extends javax.swing.JFrame {
 
         jLabel3.setText("Please Select Symptom");
 
-        jCheckBox1.setText("Headache");
+        jHead.setText("Headache");
 
-        jCheckBox2.setText("Cough");
+        jCough.setText("Cough");
 
-        jCheckBox3.setText("Fatigue");
+        jFatigue.setText("Fatigue");
 
-        jCheckBox4.setText("Body Ache");
+        jBody.setText("Body Ache");
 
-        jCheckBox5.setText("Sore Throat");
+        jSore.setText("Sore Throat");
 
-        jCheckBox6.setText("Vomitting");
+        jVommit.setText("Vomitting");
 
-        jCheckBox7.setText("Diarrhea");
+        jDia.setText("Diarrhea");
 
-        jCheckBox8.setText("Runny Nose");
+        jRunny.setText("Runny Nose");
 
-        jCheckBox9.setText("Sort Breath");
+        jSort.setText("Sort Breath");
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jButton1.setText("Submit");
@@ -81,7 +79,7 @@ public class main extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2 km", "4 km", "6 km", "8 km", "10 km", "12 km" }));
+        Droprange.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2 km", "4 km", "6 km", "8 km", "10 km", "12 km" }));
 
         javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
         jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
@@ -92,22 +90,22 @@ public class main extends javax.swing.JFrame {
                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
                         .addGap(68, 68, 68)
                         .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jCheckBox4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jCheckBox1)
-                            .addComponent(jCheckBox7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jBody, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jHead)
+                            .addComponent(jDia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(70, 70, 70)
                         .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton1)
                             .addGroup(jInternalFrame1Layout.createSequentialGroup()
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jCheckBox5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jCheckBox2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jCheckBox8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jSore, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jCough, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jRunny, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(61, 61, 61)
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCheckBox3)
-                                    .addComponent(jCheckBox6)
-                                    .addComponent(jCheckBox9)))))
+                                    .addComponent(jFatigue)
+                                    .addComponent(jVommit)
+                                    .addComponent(jSort)))))
                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
                         .addGap(83, 83, 83)
                         .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -115,7 +113,7 @@ public class main extends javax.swing.JFrame {
                             .addGroup(jInternalFrame1Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(49, 49, 49)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(Droprange, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
                         .addGap(198, 198, 198)
                         .addComponent(jLabel1)))
@@ -129,27 +127,27 @@ public class main extends javax.swing.JFrame {
                 .addGap(52, 52, 52)
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Droprange, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox1)
-                    .addComponent(jCheckBox2)
-                    .addComponent(jCheckBox3))
+                    .addComponent(jHead)
+                    .addComponent(jCough)
+                    .addComponent(jFatigue))
                 .addGap(26, 26, 26)
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox4)
-                    .addComponent(jCheckBox5)
-                    .addComponent(jCheckBox6))
+                    .addComponent(jBody)
+                    .addComponent(jSore)
+                    .addComponent(jVommit))
                 .addGap(18, 18, 18)
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox7)
-                    .addComponent(jCheckBox8)
-                    .addComponent(jCheckBox9))
+                    .addComponent(jDia)
+                    .addComponent(jRunny)
+                    .addComponent(jSort))
                 .addGap(118, 118, 118)
                 .addComponent(jButton1)
-                .addContainerGap(327, Short.MAX_VALUE))
+                .addContainerGap(335, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -166,13 +164,35 @@ public class main extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       feedback f = new feedback();
-       f.show();
-       dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+       new Thread(new Runnable() {
+            public void run() {
+                boolean validate = validateData();
+                if (validate) {
+                    lbError.hide();
+                    int radious = Droprange.Drop();
+                    int headache = jHead.getCheck();
+                    int  = Integer.parseInt(tfAge.getText());
+                    
+                    String email = tfEmail.getText();
+                    String address = taAddress.getText();
+
+                    boolean result = JdbcOperationsUtility.registerPerson(firstName, lastName, email, age, gender, address);
+                    if (result) {
+                        main m = new main();
+                        m.show();
+                        dispose();
+                    }
+                    
+                } else {
+                    lbError.setText("All fields are required. Please complete the information");
+                    lbError.show();
+                }
+            }
+        }).start();
+    }                                        
 
     /**
      * @param args the command line arguments
@@ -210,22 +230,23 @@ public class main extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
+    private javax.swing.JComboBox<String> Droprange;
+    private javax.swing.JCheckBox jBody;
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5;
-    private javax.swing.JCheckBox jCheckBox6;
-    private javax.swing.JCheckBox jCheckBox7;
-    private javax.swing.JCheckBox jCheckBox8;
-    private javax.swing.JCheckBox jCheckBox9;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JCheckBox jCough;
+    private javax.swing.JCheckBox jDia;
+    private javax.swing.JCheckBox jFatigue;
+    private javax.swing.JCheckBox jHead;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLayeredPane jLayeredPane1;
-    // End of variables declaration//GEN-END:variables
+    private javax.swing.JCheckBox jRunny;
+    private javax.swing.JCheckBox jSore;
+    private javax.swing.JCheckBox jSort;
+    private javax.swing.JCheckBox jVommit;
+    // End of variables declaration                   
 }
+
